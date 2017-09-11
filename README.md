@@ -1,2 +1,2 @@
 # Map01_Data_Model
-![Image](https://github.com/iOS-Lec-2017-1/Map01_Data_Model/blob/master/Map01_Data01.png = 30)
+![Image](./Map01_Data01.png)
