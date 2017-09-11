@@ -1,2 +1,2 @@
 # Map01_Data_Model
-![Image](./Map01_Data01.png) {:height="24px" width="48px"}
+![Image](./Map01_Data01.png24X48) 
