@@ -12,6 +12,10 @@
 		0519D9B21F6683FF0077B2D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0519D9B01F6683FF0077B2D9 /* Main.storyboard */; };
 		0519D9B41F6683FF0077B2D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0519D9B31F6683FF0077B2D9 /* Assets.xcassets */; };
 		0519D9B71F6683FF0077B2D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0519D9B51F6683FF0077B2D9 /* LaunchScreen.storyboard */; };
+		0519D9C01F66841F0077B2D9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0519D9BF1F66841F0077B2D9 /* MapKit.framework */; };
+		0519D9C21F66858E0077B2D9 /* DIT_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0519D9C11F66858E0077B2D9 /* DIT_logo.png */; };
+		0519D9C41F66859D0077B2D9 /* citizen_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0519D9C31F66859D0077B2D9 /* citizen_logo.png */; };
+		0519D9C61F6688100077B2D9 /* PinPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0519D9C51F6688100077B2D9 /* PinPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		0519D9B31F6683FF0077B2D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0519D9B61F6683FF0077B2D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0519D9B81F6683FF0077B2D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0519D9BF1F66841F0077B2D9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0519D9C11F66858E0077B2D9 /* DIT_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DIT_logo.png; sourceTree = "<group>"; };
+		0519D9C31F66859D0077B2D9 /* citizen_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = citizen_logo.png; sourceTree = "<group>"; };
+		0519D9C51F6688100077B2D9 /* PinPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0519D9C01F66841F0077B2D9 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,7 @@
 			children = (
 				0519D9AB1F6683FF0077B2D9 /* Map01_Data_Model */,
 				0519D9AA1F6683FF0077B2D9 /* Products */,
+				0519D9BE1F66841F0077B2D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +64,25 @@
 		0519D9AB1F6683FF0077B2D9 /* Map01_Data_Model */ = {
 			isa = PBXGroup;
 			children = (
+				0519D9C31F66859D0077B2D9 /* citizen_logo.png */,
+				0519D9C11F66858E0077B2D9 /* DIT_logo.png */,
 				0519D9AC1F6683FF0077B2D9 /* AppDelegate.swift */,
 				0519D9AE1F6683FF0077B2D9 /* ViewController.swift */,
 				0519D9B01F6683FF0077B2D9 /* Main.storyboard */,
+				0519D9C51F6688100077B2D9 /* PinPoint.swift */,
 				0519D9B31F6683FF0077B2D9 /* Assets.xcassets */,
 				0519D9B51F6683FF0077B2D9 /* LaunchScreen.storyboard */,
 				0519D9B81F6683FF0077B2D9 /* Info.plist */,
 			);
 			path = Map01_Data_Model;
+			sourceTree = "<group>";
+		};
+		0519D9BE1F66841F0077B2D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0519D9BF1F66841F0077B2D9 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +145,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0519D9C21F66858E0077B2D9 /* DIT_logo.png in Resources */,
 				0519D9B71F6683FF0077B2D9 /* LaunchScreen.storyboard in Resources */,
 				0519D9B41F6683FF0077B2D9 /* Assets.xcassets in Resources */,
 				0519D9B21F6683FF0077B2D9 /* Main.storyboard in Resources */,
+				0519D9C41F66859D0077B2D9 /* citizen_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +162,7 @@
 			files = (
 				0519D9AF1F6683FF0077B2D9 /* ViewController.swift in Sources */,
 				0519D9AD1F6683FF0077B2D9 /* AppDelegate.swift in Sources */,
+				0519D9C61F6688100077B2D9 /* PinPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
