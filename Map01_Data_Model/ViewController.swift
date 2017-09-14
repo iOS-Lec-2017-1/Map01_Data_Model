@@ -17,26 +17,13 @@ class ViewController: UIViewController, MKMapViewDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         
         zoomToRegion()
-        
-        // Annotation(Pin) 꼽기
-//        let anno01 = MKPointAnnotation()
-//        anno01.coordinate = center
-//        anno01.title = "DIT 동의과학대학교"
-//        anno01.subtitle = "나의 꿈이 자라는 곳"
-//        
-//        // 부산시민공원 35.168444, 129.057832
-//        let anno02 = MKPointAnnotation()
-//        anno02.coordinate.latitude = 35.168444
-//        anno02.coordinate.longitude = 129.057832
-//        anno02.title = "부산시민공원"
-//        anno02.subtitle = "부산시민들의 휴식처"
-//        
-//        myMapView.addAnnotation(anno01)
-//        myMapView.addAnnotation(anno02)
-        
+                
+        // 35.164437, 129.064908 송상현 광장
         let a = PinPoint(coordinate: CLLocationCoordinate2D(latitude: 35.166197, longitude: 129.072594), title: "동의과학대학교", subtitle: "우리들의 꿈이 자라는 곳")
         let b = PinPoint(coordinate: CLLocationCoordinate2D(latitude: 35.168444, longitude: 129.057832), title: "부산시민공원", subtitle: "부산 시민들의 휴식처")
-        myMapView.addAnnotations([a,b])
+        let c = PinPoint(coordinate: CLLocationCoordinate2D(latitude: 35.164437, longitude: 129.06490), title: "송상현광장", subtitle: "초록 잔디밭이 좋은 곳")
+        
+        myMapView.addAnnotations([a,b,c])
         
         myMapView.delegate = self
     }
@@ -66,11 +53,16 @@ class ViewController: UIViewController, MKMapViewDelegate {
                 leftIconView.image = UIImage(named:"citizen_logo.png" )
                 annotationView?.leftCalloutAccessoryView = leftIconView
 
-            } else {
+            } else if annotation.title! == "동의과학대학교" {
                 let leftIconView = UIImageView(frame: CGRect(x: 0, y: 0, width: 45, height: 45))
                 leftIconView.image = UIImage(named:"DIT_logo.png" )
                 annotationView?.leftCalloutAccessoryView = leftIconView
 
+            } else {
+                annotationView?.pinTintColor = UIColor.blue
+                let leftIconView = UIImageView(frame: CGRect(x: 0, y: 0, width: 45, height: 45))
+                leftIconView.image = UIImage(named:"Songsang.png" )
+                annotationView?.leftCalloutAccessoryView = leftIconView
             }
         } else {
             annotationView?.annotation = annotation

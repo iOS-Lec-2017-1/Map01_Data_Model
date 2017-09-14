@@ -16,6 +16,7 @@
 		0519D9C21F66858E0077B2D9 /* DIT_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0519D9C11F66858E0077B2D9 /* DIT_logo.png */; };
 		0519D9C41F66859D0077B2D9 /* citizen_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0519D9C31F66859D0077B2D9 /* citizen_logo.png */; };
 		0519D9C61F6688100077B2D9 /* PinPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0519D9C51F6688100077B2D9 /* PinPoint.swift */; };
+		05F51BA91F6A219900A3301B /* Songsang.png in Resources */ = {isa = PBXBuildFile; fileRef = 05F51BA81F6A219900A3301B /* Songsang.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0519D9C11F66858E0077B2D9 /* DIT_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DIT_logo.png; sourceTree = "<group>"; };
 		0519D9C31F66859D0077B2D9 /* citizen_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = citizen_logo.png; sourceTree = "<group>"; };
 		0519D9C51F6688100077B2D9 /* PinPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinPoint.swift; sourceTree = "<group>"; };
+		05F51BA81F6A219900A3301B /* Songsang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Songsang.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		0519D9AB1F6683FF0077B2D9 /* Map01_Data_Model */ = {
 			isa = PBXGroup;
 			children = (
+				05F51BA81F6A219900A3301B /* Songsang.png */,
 				0519D9C31F66859D0077B2D9 /* citizen_logo.png */,
 				0519D9C11F66858E0077B2D9 /* DIT_logo.png */,
 				0519D9AC1F6683FF0077B2D9 /* AppDelegate.swift */,
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0519D9C21F66858E0077B2D9 /* DIT_logo.png in Resources */,
+				05F51BA91F6A219900A3301B /* Songsang.png in Resources */,
 				0519D9B71F6683FF0077B2D9 /* LaunchScreen.storyboard in Resources */,
 				0519D9B41F6683FF0077B2D9 /* Assets.xcassets in Resources */,
 				0519D9B21F6683FF0077B2D9 /* Main.storyboard in Resources */,
@@ -326,6 +330,7 @@
 				0519D9BD1F6683FF0077B2D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
