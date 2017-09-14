@@ -47,18 +47,21 @@ class ViewController: UIViewController, MKMapViewDelegate {
             annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
             annotationView?.canShowCallout = true
             
-            if annotation.title! == "부산시민공원" {
+            if annotation.title! == "부산시민공원" {산
+                // 부시민공원
                 annotationView?.pinTintColor = UIColor.green
                 let leftIconView = UIImageView(frame: CGRect(x: 0, y: 0, width: 53, height: 53))
                 leftIconView.image = UIImage(named:"citizen_logo.png" )
                 annotationView?.leftCalloutAccessoryView = leftIconView
 
             } else if annotation.title! == "동의과학대학교" {
+                // 동의과학대학교
                 let leftIconView = UIImageView(frame: CGRect(x: 0, y: 0, width: 45, height: 45))
                 leftIconView.image = UIImage(named:"DIT_logo.png" )
                 annotationView?.leftCalloutAccessoryView = leftIconView
 
             } else {
+                // 송상현광장
                 annotationView?.pinTintColor = UIColor.blue
                 let leftIconView = UIImageView(frame: CGRect(x: 0, y: 0, width: 45, height: 45))
                 leftIconView.image = UIImage(named:"Songsang.png" )
